@@ -31,3 +31,24 @@ textarea,
 select {
   font: inherit; /* form controls inherit fonts */
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word; /* Avoid text overflows */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #3d424c;
+  font-family: Poppins, "Work Sans", Helvetica, Arial, sans-serif;
+  text-wrap: balance;
+}
