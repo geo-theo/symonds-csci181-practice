@@ -5,3 +5,13 @@ html {
   box-sizing: border-box; /* Sets global default for box model */
   background-color: #edf0f5;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* Tells everything to inherit border-box by default */
+}
+
+* {
+  margin: 0; /* remove default margin */
+}
