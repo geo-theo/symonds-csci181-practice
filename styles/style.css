@@ -52,3 +52,56 @@ h6 {
   font-family: Poppins, "Work Sans", Helvetica, Arial, sans-serif;
   text-wrap: balance;
 }
+
+h1 {
+  font-size: 2.36875rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.77688rem;
+  font-weight: 500;
+  line-height: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.33313rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  margin-text-transfrom: uppercase;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  color: #003ac0;
+  font-weight: 500;
+}
+
+button {
+  padding: 0.75rem 1rem;
+  background-color: #edf0f5;
+  color: #003ac0;
+  border-radius: 0.75rem;
+  border: none;
+  font-weight: 500;
+}
+
+.display-text {
+  font-family: "Bebas Neue", "Work Sans", Helvetica, Arial, sans-serif;
+  font-size: 3.1575rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+}
