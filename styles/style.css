@@ -24,3 +24,10 @@ body {
   font-family: "Work Sans", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased; /* Improve text rendering */
 }
+
+input,
+button,
+textarea,
+select {
+  font: inherit; /* form controls inherit fonts */
+}
