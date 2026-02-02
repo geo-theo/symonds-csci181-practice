@@ -78,7 +78,7 @@ h4 {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.25rem;
-  margin-text-transfrom: uppercase;
+  text-transform: uppercase;
 }
 
 p {
