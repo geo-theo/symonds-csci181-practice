@@ -15,3 +15,12 @@ html {
 * {
   margin: 0; /* remove default margin */
 }
+
+body {
+  min-height: 100vh;
+  color: #4f5565;
+  font-size: 1rem; /* 1rem equals 16px */
+  line-height: 1.5rem;
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased; /* Improve text rendering */
+}
