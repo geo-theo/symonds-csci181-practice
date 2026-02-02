@@ -1,9 +1,9 @@
-@import url();
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600&display=swap");
 
 html {
   font-size: 16px; /* sets the root font size */
   box-sizing: border-box; /* Sets global default for box model */
-  background-color: #edf0f5;
+  background-color: #1d2545;
 }
 
 *,
@@ -18,7 +18,7 @@ html {
 
 body {
   min-height: 100vh;
-  color: #4f5565;
+  color: #1d2545;
   font-size: 1rem; /* 1rem equals 16px */
   line-height: 1.5rem;
   font-family: "Work Sans", Helvetica, Arial, sans-serif;
@@ -48,7 +48,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #3d424c;
+  color: #ccccff;
   font-family: Poppins, "Work Sans", Helvetica, Arial, sans-serif;
   text-wrap: balance;
 }
@@ -86,14 +86,14 @@ p {
 }
 
 a {
-  color: #003ac0;
+  color: #ccccff;
   font-weight: 500;
 }
 
 button {
   padding: 0.75rem 1rem;
-  background-color: #edf0f5;
-  color: #003ac0;
+  background-color: #1d2545;
+  color: #ccccff;
   border-radius: 0.75rem;
   border: none;
   font-weight: 500;
@@ -119,8 +119,96 @@ section.page-section {
   padding: 1rem 1.5rem;
 }
 #page-header .logo {
-  color: #3d424c;
+  color: #ccccff;
   font-family: Poppins, "Work Sans", Helvetica, Arial, sans-serif;
   text-decoration: none;
   font-size: 1.3333rem;
+}
+
+#hero {
+  background-image: url("../images/header_hero.jpg");
+  background-size: cover;
+  background-position: center;
+
+  height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+
+  margin-bottom: 3rem;
+}
+
+#page-header {
+  background-color: #1d2545;
+  border-bottom: 1px solid #d4d9e2;
+}
+
+#page-header img {
+  height: 50px;
+  width: auto;
+}
+
+#page-header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+#page-header nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+#page-header nav a {
+  text-decoration: none;
+  color: #ccccff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+
+#page-header nav a:hover {
+  background-color: #edf0f5;
+}
+
+#page-header {
+  padding: 1rem 1.5rem;
+}
+
+/* Resume page spacing */
+.resume h1 {
+  margin-bottom: 1.5rem;
+}
+.resume h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+.resume h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.resume p {
+  margin-bottom: 0.5rem;
+}
+
+.resume ul {
+  margin-top: 0.5rem;
+  margin-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.resume li {
+  margin-bottom: 0.25rem;
+}
+
+.resume > section {
+  margin-bottom: 2rem;
+}
+
+.resume {
+  color: #ccccff;
 }

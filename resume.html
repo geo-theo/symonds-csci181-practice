@@ -6,14 +6,18 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Resume - Theo Symonds Portfolio</title>
   </head>
+
   <body>
-    <header>
-      <img
-        src="images/html_logo_TS.svg"
-        width="50px"
-        height="50px"
-        alt="Logo image with initials TS"
-      />
+    <header id="page-header">
+      <a href="resume.html" class="logo">
+        <img
+          src="images/html_logo_TS.svg"
+          width="50px"
+          height="50px"
+          alt="Logo image with initials TS"
+        />
+        <span>Theo Symonds</span>
+      </a>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -22,40 +26,42 @@
       </nav>
     </header>
     <main>
-      <h1>Resume</h1>
-      <!---------- Education ---------->
-      <section>
-        <h2>Education</h2>
-        <h3>
-          <strong>Bachelor's in Geography & Computer Science</strong>,
-          University of Montana
-        </h3>
-        <p>May 2025 - Present</p>
-        <p><strong>GPA:</strong> 4.0</p>
-      </section>
-      <!---------- Work Experience ---------->
-      <section>
-        <h2>Experience</h2>
-        <h3>
-          <strong>Data Analyst</strong> - USAID Global Health Supply Chain
-          Project
-        </h3>
-        <p>Jul 2020 - Feb 2025</p>
-        <p>Washington, DC, USA</p>
-        <ul>
-          <li>Collect HIV supply chain data from warehouses.</li>
-          <li>Clean and process data.</li>
-          <li>Present data in visualizations and reports.</li>
-        </ul>
-      </section>
-      <!---------- Skills ---------->
-      <section>
-        <h2>Skills</h2>
-        <ul>
-          <li>Data Collection</li>
-          <li>Excel</li>
-          <li>PowerBI</li>
-        </ul>
+      <section class="page-section resume">
+        <h1>Resume</h1>
+        <!---------- Education ---------->
+        <section>
+          <h2>Education</h2>
+          <h3>
+            <strong>Bachelor's in Geography & Computer Science</strong>,
+            University of Montana
+          </h3>
+          <p>May 2025 - Present</p>
+          <p><strong>GPA:</strong> 4.0</p>
+        </section>
+        <!---------- Work Experience ---------->
+        <section>
+          <h2>Experience</h2>
+          <h3>
+            <strong>Data Analyst</strong> - USAID Global Health Supply Chain
+            Project
+          </h3>
+          <p>Jul 2020 - Feb 2025</p>
+          <p>Washington, DC, USA</p>
+          <ul>
+            <li>Collect HIV supply chain data from warehouses.</li>
+            <li>Clean and process data.</li>
+            <li>Present data in visualizations and reports.</li>
+          </ul>
+        </section>
+        <!---------- Skills ---------->
+        <section>
+          <h2>Skills</h2>
+          <ul>
+            <li>Data Collection</li>
+            <li>Excel</li>
+            <li>PowerBI</li>
+          </ul>
+        </section>
       </section>
     </main>
   </body>
