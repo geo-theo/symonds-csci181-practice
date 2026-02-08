@@ -1,1 +1,1 @@
-Cloned with GitHub Desktop App
+HTML/CSS practice with portfolio website pages.
