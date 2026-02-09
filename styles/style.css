@@ -212,3 +212,82 @@ section.page-section {
 .resume {
   color: #ccccff;
 }
+
+/* =========================
+   CONTACT FORM (fix labels + alignment)
+   ========================= */
+
+.contact-form {
+  max-width: 600px;
+}
+
+.contact-form div {
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d4d9e2;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  color: #3d424c;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  margin-top: 0.5rem;
+  background-color: #003ac0;
+  color: #ffffff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #002a8f;
+}
+
+/* Courses table */
+.courses-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+
+  background-color: #1f2937; /* dark table background */
+  color: #f1f5f9; /* light text */
+}
+
+.courses-table th,
+.courses-table td {
+  border: 1px solid #4b5563; /* softer border for dark bg */
+  padding: 0.75rem;
+  vertical-align: top;
+}
+
+/* Header row */
+.courses-table thead th {
+  background-color: #111827; /* slightly darker header */
+  color: #e5e7eb;
+  text-align: left;
+}
+
+/* Row headers (course names) */
+.courses-table tbody th {
+  font-weight: 600;
+  color: #e5e7eb;
+}
