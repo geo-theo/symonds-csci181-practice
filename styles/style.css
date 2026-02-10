@@ -249,7 +249,7 @@ section.page-section {
 
 .contact-form button {
   margin-top: 0.5rem;
-  background-color: #003ac0;
+  background-color: #00ffff;
   color: #ffffff;
   padding: 0.75rem 1.25rem;
   border-radius: 0.75rem;
@@ -259,7 +259,7 @@ section.page-section {
 }
 
 .contact-form button:hover {
-  background-color: #002a8f;
+  background-color: #b4a7d6;
 }
 
 /* Courses table */
