@@ -117,7 +117,15 @@ section.page-section {
 
 #page-header {
   padding: 1rem 1.5rem;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background-color: #1d2545;
+  border-bottom: 1px solid #d4d9e2;
 }
+
 #page-header .logo {
   color: #ccccff;
   font-family: Poppins, "Work Sans", Helvetica, Arial, sans-serif;
