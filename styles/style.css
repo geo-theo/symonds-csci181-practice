@@ -343,84 +343,96 @@ section.page-section {
    BENTO GRID
    ========================= */
 
-/* Center the bento grid inside the section */
-#bento {
-  padding: 4rem 2rem;
-  max-width: 1600px;
-  margin: 0 auto;
-  min-height: 900px;
-
-  display: flex;
-  justify-content: center;
-}
-
-.bento-title {
-  margin-bottom: 2rem; /* more space under title */
-  color: #3d424c;
-  font-size: 2rem; /* bigger title */
-}
-
-/* Bigger tiles */
+/* BENTO GRID (desktop layout) */
 .bento-grid {
   display: grid;
-  grid-template-columns: repeat(4, 320px); /* was 240px */
-  grid-auto-rows: 320px; /* was 240px */
-  gap: 2rem; /* more spacing */
-  justify-content: center;
+  gap: 18px;
+
+  /* 4 columns gives you the "quarter" concept cleanly */
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 140px;
+
+  /* Named layout */
+  grid-template-areas:
+    "left  sq1   sq2   right"
+    "left  horiz horiz right"
+    "left  bigsq recta right"
+    "left  bigsq rectb right";
 }
 
-/* Keep images inside tiles */
-.bento-img {
+/* Each tile clips the image */
+.bento-item {
+  overflow: hidden;
+  border-radius: 18px; /* optional */
+}
+
+/* The key: images fill tiles with no white space */
+.bento-item img {
   width: 100%;
   height: 100%;
   display: block;
-  border-radius: 1rem;
-
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
-
-  background-color: #e6e6e6;
 }
 
-/* Layout stays the same */
+/* Map items to grid areas */
 .left-vert {
-  grid-column: 1;
-  grid-row: 1 / span 2;
+  grid-area: left;
 }
-
-.right-vert {
-  grid-column: 4;
-  grid-row: 1 / span 2;
-}
-
 .sq1 {
-  grid-column: 2;
-  grid-row: 1;
+  grid-area: sq1;
 }
-
 .sq2 {
-  grid-column: 3;
-  grid-row: 1;
+  grid-area: sq2;
 }
-
 .horiz {
-  grid-column: 2 / span 2;
-  grid-row: 2;
+  grid-area: horiz;
+}
+.right-vert {
+  grid-area: right;
 }
 
-/* Mobile stack */
-@media (max-width: 1400px) {
+.big-sq {
+  grid-area: bigsq;
+}
+.rect-a {
+  grid-area: recta;
+}
+.rect-b {
+  grid-area: rectb;
+}
+
+/* Responsive: collapse to a simple, good-looking flow */
+@media (max-width: 900px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 160px;
+    grid-template-areas: none;
+  }
+
+  /* Let items auto-flow, but keep some visual hierarchy */
+  .left-vert,
+  .right-vert,
+  .horiz {
+    grid-column: span 2;
+  }
+
+  .big-sq {
+    grid-column: span 2;
+    grid-auto-rows: 220px;
+  }
+}
+
+@media (max-width: 520px) {
   .bento-grid {
     grid-template-columns: 1fr;
-    grid-auto-rows: 320px;
+    grid-auto-rows: 180px;
   }
 
   .left-vert,
   .right-vert,
-  .sq1,
-  .sq2,
-  .horiz {
-    grid-column: auto;
-    grid-row: auto;
+  .horiz,
+  .big-sq {
+    grid-column: span 1;
   }
 }
