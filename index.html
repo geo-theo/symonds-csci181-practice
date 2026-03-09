@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Home - Theo Symonds Portfolio</title>
   </head>
 
@@ -36,16 +37,129 @@
         <button>View my work</button>
       </section>
       <h1>Home</h1>
+
+      <section class="px-6 py-16 bg-[#3d424c]">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">
+            Testimonials
+          </h2>
+          <ul
+            class="list-none grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 p-0 m-0 max-w-5xl mx-auto"
+          >
+            <li>
+              <figure
+                class="relative bg-white rounded-2xl shadow-md p-8 h-full"
+              >
+                <svg
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  focusable="false"
+                  class="absolute top-4 left-4 w-8 h-8 fill-gray-200"
+                >
+                  <path d="M10 8v8H6v6h6V8h-2zm12 0v8h-4v6h6V8h-2z"></path>
+                </svg>
+                <blockquote class="mb-6">
+                  <p class="text-gray-600 italic leading-relaxed pt-4">
+                    I highly recommend working with Theo, he will go above and
+                    beyond to deliver the best quality work. Everyone at Super
+                    Secret Company A found that Theo is dependable,
+                    hard-working, and trustworthy. You can trust him with your
+                    company secrets.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center gap-4">
+                  <img
+                    src="./images/testimonial1.png"
+                    alt="Portrait of first testimonier"
+                    class="w-14 h-14 rounded-full object-cover"
+                  />
+                  <div>
+                    <p class="text-gray-900 font-medium">Stevill Jobgates</p>
+                    <p class="text-sm text-gray-500">
+                      CEO, Super Secret Company A
+                    </p>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure
+                class="relative bg-white rounded-2xl shadow-md p-8 h-full"
+              >
+                <svg
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  focusable="false"
+                  class="absolute top-4 left-4 w-8 h-8 fill-gray-200"
+                >
+                  <path d="M10 8v8H6v6h6V8h-2zm12 0v8h-4v6h6V8h-2z"></path>
+                </svg>
+                <blockquote class="mb-6">
+                  <p class="text-gray-600 italic leading-relaxed pt-4">
+                    Theo was so bad at his job at Even Secreter Company B, that
+                    we had to resort to permanently suspending the company's
+                    entire internship program. Do not trust him with your
+                    company secrets.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center gap-4">
+                  <img
+                    src="./images/testimonial2.png"
+                    alt="Portrait of second testimonier"
+                    class="w-14 h-14 rounded-full object-cover"
+                  />
+                  <div>
+                    <p class="text-gray-900 font-medium">Jenselon Huangmusk</p>
+                    <p class="text-sm text-gray-500">
+                      Chief Legal Officer, Even Secreter Company B
+                    </p>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure
+                class="relative bg-white rounded-2xl shadow-md p-8 h-full"
+              >
+                <svg
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  focusable="false"
+                  class="absolute top-4 left-4 w-8 h-8 fill-gray-200"
+                >
+                  <path d="M10 8v8H6v6h6V8h-2zm12 0v8h-4v6h6V8h-2z"></path>
+                </svg>
+                <blockquote class="mb-6">
+                  <p class="text-gray-600 italic leading-relaxed pt-4">Who?</p>
+                </blockquote>
+                <figcaption class="flex items-center gap-4">
+                  <img
+                    src="./images/testimonial3.png"
+                    alt="Portrait of third testimonier"
+                    class="w-14 h-14 rounded-full object-cover"
+                  />
+                  <div>
+                    <p class="text-gray-900 font-medium">
+                      Diarbara Hendricorcoran
+                    </p>
+                    <p class="text-sm text-gray-500">Shark, Shark Tank</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <section class="page-section" id="projects">
         <h2>Projects</h2>
-
         <article class="project-card">
           <h3>
             <a href="#" class="project-link">SAR Ship Detection (YOLO)</a>
             <img
               class="project-img"
-              src="images/html_logo_TS.svg"
-              alt="Placeholder image"
+              src="images/project1.png"
+              alt="Placeholder image for the first project listed."
             />
           </h3>
           <p>
@@ -55,14 +169,13 @@
           </p>
           <a href="#" class="project-link">View Project</a>
         </article>
-
         <article class="project-card">
           <h3>
             <a href="#" class="project-link">Kerala Snakebite Accessibility</a>
             <img
               class="project-img"
-              src="images/html_logo_TS.svg"
-              alt="Placeholder image"
+              src="images/project2.png"
+              alt="Placeholder image for the first project listed."
             />
           </h3>
           <p>
@@ -72,16 +185,15 @@
           </p>
           <a href="#" class="project-link">View Case Study</a>
         </article>
-
         <article class="project-card">
           <h3>
             <a href="#" class="project-link">Paris Transit Desert Analysis</a>
             <img
               class="project-img"
-              src="images/html_logo_TS.svg"
+              src="images/project3.png"
               width="50"
               height="50"
-              alt="Placeholder image"
+              alt="Placeholder image for the first project listed."
             />
           </h3>
           <p>
