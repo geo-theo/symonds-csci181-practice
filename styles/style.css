@@ -436,3 +436,33 @@ section.page-section {
     grid-column: span 1;
   }
 }
+
+
+/* Skip link */
+.skip-link {
+  visibility: hidden;
+}
+
+.skip-link:focus {
+  visibility: visible;
+}
+
+/* Aria Label */
+#page-header nav a[aria-current="page"] {
+  font-weight: 700;
+  text-decoration: underline;
+  background-color: #edf0f5;
+  color: #1d2545;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    animation-delay: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

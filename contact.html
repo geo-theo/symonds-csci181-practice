@@ -8,6 +8,8 @@
   </head>
 
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header id="page-header">
       <a href="index.html" class="logo">
         <img
@@ -16,19 +18,20 @@
           height="50"
           alt="Logo image with initials TS"
         />
+        <span>Theo Symonds</span>
       </a>
 
-      <nav>
+      <nav aria-label="Primary navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="bento-grid.html">Bento-Grid</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main id="main-content">
       <section id="hero">
         <p class="display-text">
           Cartography | Coding | Geographic Information Systems
