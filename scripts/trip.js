@@ -63,7 +63,7 @@ while (milesTraveled < distanceMiles) {
   const runningFuelCost = calculateFuelCost(gallonsUsedSoFar, gasPrice);
 
   console.log(
-    `Stop ${stopNumber}: ${milesTraveled} miles traveled, estimated gas spent $${runningFuelCost.toFixed(2)}`
+    `Stop ${stopNumber}: ${milesTraveled} miles traveled, estimated gas spent $${runningFuelCost.toFixed(2)}`,
   );
 
   stopNumber += 1;

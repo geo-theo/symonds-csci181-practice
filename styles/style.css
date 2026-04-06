@@ -1,9 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600&display=swap");
 
+:root {
+  --page-bg: #f8fafc;
+  --text: #1d2545;
+  --heading: #1d2545;
+  --link: #2847a1;
+  --button-bg: #1d2545;
+  --button-text: #f8fafc;
+  --header-bg: #ffffff;
+  --header-border: #d4d9e2;
+  --nav-hover-bg: #edf0f5;
+  --nav-current-bg: #dbe4ff;
+  --nav-current-text: #1d2545;
+  --section-border: #d4d9e2;
+  --section-bg: #ffffff;
+  --form-label: #1d2545;
+  --input-bg: #ffffff;
+  --input-text: #3d424c;
+  --input-border: #cbd5e1;
+  --table-bg: #ffffff;
+  --table-text: #1d2545;
+  --table-border: #cbd5e1;
+  --table-head-bg: #e2e8f0;
+  --table-head-text: #1d2545;
+  --project-card-bg: #ffffff;
+  --project-card-border: #cbd5e1;
+  --project-card-text: #1d2545;
+}
+
+body.dark {
+  --page-bg: #1d2545;
+  --text: #e5e7eb;
+  --heading: #ccccff;
+  --link: #ccccff;
+  --button-bg: #0f172a;
+  --button-text: #f8fafc;
+  --header-bg: #1d2545;
+  --header-border: #475569;
+  --nav-hover-bg: #334155;
+  --nav-current-bg: #edf0f5;
+  --nav-current-text: #1d2545;
+  --section-border: #475569;
+  --section-bg: #111827;
+  --form-label: #f8fafc;
+  --input-bg: #ffffff;
+  --input-text: #3d424c;
+  --input-border: #d4d9e2;
+  --table-bg: #1f2937;
+  --table-text: #f1f5f9;
+  --table-border: #4b5563;
+  --table-head-bg: #111827;
+  --table-head-text: #e5e7eb;
+  --project-card-bg: #111827;
+  --project-card-border: #4b5563;
+  --project-card-text: #f1f5f9;
+}
+
 html {
   font-size: 16px; /* sets the root font size */
   box-sizing: border-box; /* Sets global default for box model */
-  background-color: #1d2545;
+  background-color: var(--page-bg);
 }
 
 *,
@@ -18,7 +74,8 @@ html {
 
 body {
   min-height: 100vh;
-  color: #1d2545;
+  background-color: var(--page-bg);
+  color: var(--text);
   font-size: 1rem; /* 1rem equals 16px */
   line-height: 1.5rem;
   font-family: "Work Sans", Helvetica, Arial, sans-serif;
@@ -48,7 +105,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #ccccff;
+  color: var(--heading);
   font-family: Poppins, "Work Sans", Helvetica, Arial, sans-serif;
   text-wrap: balance;
 }
@@ -86,14 +143,14 @@ p {
 }
 
 a {
-  color: #ccccff;
+  color: var(--link);
   font-weight: 500;
 }
 
 button {
   padding: 0.75rem 1rem;
-  background-color: #1d2545;
-  color: #ccccff;
+  background-color: var(--button-bg);
+  color: var(--button-text);
   border-radius: 0.75rem;
   border: none;
   font-weight: 500;
@@ -109,7 +166,8 @@ button {
 section.page-section {
   padding: 1.5rem;
   border-radius: 1rem;
-  border: 1px solid #d4d9e2;
+  border: 1px solid var(--section-border);
+  background-color: var(--section-bg);
   margin: 1 auto 1rem auto;
   width: 50%;
   max-width: 1080px;
@@ -122,12 +180,12 @@ section.page-section {
   top: 0;
   z-index: 1000;
 
-  background-color: #1d2545;
-  border-bottom: 1px solid #d4d9e2;
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--header-border);
 }
 
 #page-header .logo {
-  color: #ccccff;
+  color: var(--heading);
   font-family: Poppins, "Work Sans", Helvetica, Arial, sans-serif;
   text-decoration: none;
   font-size: 1.3333rem;
@@ -151,11 +209,6 @@ section.page-section {
   margin-bottom: 3rem;
 }
 
-#page-header {
-  background-color: #1d2545;
-  border-bottom: 1px solid #d4d9e2;
-}
-
 #page-header img {
   height: 50px;
   width: auto;
@@ -173,13 +226,13 @@ section.page-section {
 
 #page-header nav a {
   text-decoration: none;
-  color: #ccccff;
+  color: var(--link);
   padding: 0.5rem 0.75rem;
   border-radius: 0.5rem;
 }
 
 #page-header nav a:hover {
-  background-color: #edf0f5;
+  background-color: var(--nav-hover-bg);
 }
 
 #page-header {
@@ -218,7 +271,7 @@ section.page-section {
 }
 
 .resume {
-  color: #ccccff;
+  color: var(--text);
 }
 
 /* =========================
@@ -235,7 +288,7 @@ section.page-section {
 
 .contact-form label {
   display: block;
-  color: #ffffff;
+  color: var(--form-label);
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -245,10 +298,10 @@ section.page-section {
   display: block;
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid #d4d9e2;
+  border: 1px solid var(--input-border);
   border-radius: 0.75rem;
-  background: #ffffff;
-  color: #3d424c;
+  background: var(--input-bg);
+  color: var(--input-text);
 }
 
 .contact-form textarea {
@@ -276,28 +329,28 @@ section.page-section {
   border-collapse: collapse;
   margin-top: 1rem;
 
-  background-color: #1f2937; /* dark table background */
-  color: #f1f5f9; /* light text */
+  background-color: var(--table-bg);
+  color: var(--table-text);
 }
 
 .courses-table th,
 .courses-table td {
-  border: 1px solid #4b5563; /* softer border for dark bg */
+  border: 1px solid var(--table-border);
   padding: 0.75rem;
   vertical-align: top;
 }
 
 /* Header row */
 .courses-table thead th {
-  background-color: #111827; /* slightly darker header */
-  color: #e5e7eb;
+  background-color: var(--table-head-bg);
+  color: var(--table-head-text);
   text-align: left;
 }
 
 /* Row headers (course names) */
 .courses-table tbody th {
   font-weight: 600;
-  color: #e5e7eb;
+  color: var(--table-text);
 }
 
 /* Projects section */
@@ -306,8 +359,8 @@ section.page-section {
 }
 
 .project-card {
-  background-color: #111827;
-  border: 1px solid #4b5563;
+  background-color: var(--project-card-bg);
+  border: 1px solid var(--project-card-border);
   border-radius: 1rem;
   padding: 1.25rem;
   margin-bottom: 1rem;
@@ -319,11 +372,11 @@ section.page-section {
 
 .project-card p {
   margin-bottom: 0.75rem;
-  color: #f1f5f9;
+  color: var(--project-card-text);
 }
 
 .project-link {
-  color: #ccccff;
+  color: var(--link);
   text-decoration: underline;
 }
 
@@ -437,7 +490,6 @@ section.page-section {
   }
 }
 
-
 /* Skip link */
 .skip-link {
   visibility: hidden;
@@ -451,8 +503,8 @@ section.page-section {
 #page-header nav a[aria-current="page"] {
   font-weight: 700;
   text-decoration: underline;
-  background-color: #edf0f5;
-  color: #1d2545;
+  background-color: var(--nav-current-bg);
+  color: var(--nav-current-text);
 }
 
 /* Reduced Motion */
