@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/theme.js" defer></script>
+    <script src="./scripts/weather.js" defer></script>
+    <title>Missoula Weather</title>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header id="page-header">
+      <a href="index.html" class="logo">
+        <img
+          src="images/html_logo_TS.svg"
+          width="50"
+          height="50"
+          alt="Logo image with initials TS"
+        />
+        <span>Theo Symonds</span>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="bento-grid.html">Bento-Grid</a></li>
+          <li><a href="weather.html" aria-current="page">Weather</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="theme-toggle" type="button">Switch to Dark Mode</button>
+    </header>
+
+    <main id="main-content" class="weather-page">
+      <section class="weather-card" aria-labelledby="weather-heading">
+        <h1 id="weather-heading">Missoula Weather</h1>
+        <div id="weather-output" class="weather-output" aria-live="polite">
+          Weather data not available.
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -518,3 +518,50 @@ section.page-section {
     scroll-behavior: auto !important;
   }
 }
+
+.weather-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.weather-card {
+  width: min(100%, 42rem);
+  text-align: center;
+}
+
+.weather-card h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.weather-output {
+  min-height: 12rem;
+  display: grid;
+  place-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.weather-loading,
+.weather-empty {
+  color: #52607a;
+}
+
+.weather-error {
+  color: #b42318;
+}
+
+.weather-temperature {
+  font-family: "Bebas Neue", "Work Sans", Helvetica, Arial, sans-serif;
+  font-size: clamp(5rem, 16vw, 9rem);
+  line-height: 0.9;
+  color: #7a0019;
+}
+
+.weather-forecast {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  color: var(--text);
+}
